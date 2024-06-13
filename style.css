@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+html, body {
+    max-width: 100vw;
+    height: 100vh;
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.button {
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 5px rgb(63, 63, 63);
+    font-weight: bold;
+
+}
+
+#agree-button {
+    background-color: green;
+}
+
+#decline-button {
+    background-color: red;
+}
+
+#feedback {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: 1s display;
+}
+
+#feedback iframe {
+    border-radius: 1rem;
+}
+
+#feedback p {
+    text-align: center;
+    display: block;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
